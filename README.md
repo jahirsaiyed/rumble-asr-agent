@@ -3,6 +3,19 @@
 Browser mic -> Rumble-2-Flash (local GPU) -> OpenAI chat + mock tools -> OpenAI TTS -> browser speaker.
 Talking over the agent interrupts it.
 
+## Install
+
+Python 3.12. Dependencies are pinned in `requirements.txt` (`transformers` 5.x is required for this model).
+
+```powershell
+python -m venv .venv
+# NVIDIA GPU (recommended): install the CUDA build of torch first
+.venv\Scripts\python -m pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cu126
+.venv\Scripts\python -m pip install -r requirements.txt
+```
+
+CPU-only machines (and Macs) can skip the CUDA line. The app then runs on CPU, which is slower.
+
 ## Run
 
 ```powershell

@@ -1,10 +1,12 @@
-fastapi
-uvicorn[standard]
-openai
-python-dotenv
-torch
-transformers
-accelerate
-numpy
-pytest
-pytest-asyncio
+# Versions below are the ones this project was developed and tested with.
+# torch: this pins the base version only. For an NVIDIA GPU install the CUDA build first (see README).
+fastapi==0.165.0
+uvicorn[standard]==0.54.0
+openai==3.57.0
+python-dotenv==1.2.4
+torch==2.14.1
+transformers==5.23.0
+accelerate==1.16.0
+numpy==2.5.5
+pytest==9.2.0
+pytest-asyncio==1.5.0
