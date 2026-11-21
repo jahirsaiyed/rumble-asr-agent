@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+torch
+transformers
+accelerate
+numpy
+pytest
+pytest-asyncio
